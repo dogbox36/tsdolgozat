@@ -6,3 +6,5 @@ interface Artwork{
     price:  number;
 
 }
+
+let Artwork:Artwork[];

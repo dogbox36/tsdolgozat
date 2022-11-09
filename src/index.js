@@ -30,14 +30,3 @@ class Statue {
 }
 exports.Statue = Statue;
 _Statue_title = new WeakMap(), _Statue_year = new WeakMap(), _Statue_price = new WeakMap(), _Statue_height = new WeakMap();
-function required() {
-    var empt = document.forms["year"]["title"].value;
-    if (empt == "") {
-        alert("Adj meg egy nevet!");
-        return false;
-    }
-    else {
-        alert('Próbáld meg újra');
-        return true;
-    }
-}

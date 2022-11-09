@@ -18,17 +18,3 @@ export class Statue {
     }
 }
 
-function required()
-{
-var empt = document.forms["year"]["title"].value;
-if (empt == "")
-{
-alert("Adj meg egy nevet!");
-return false;
-}
-else 
-{
-alert('Próbáld meg újra');
-return true; 
-}
-}
