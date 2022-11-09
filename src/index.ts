@@ -1,6 +1,7 @@
+import { Artwork } from "./Artwork";
 
 
-export class Statue {
+export class Statue implements Artwork{
     #title: string;
     #year:Date;
     #price:number;
@@ -16,5 +17,7 @@ export class Statue {
     kiir() : void {
         console.log(this.#title, this.#year, this.#price, this.#height);
     }
+    toString(): string {
+        return this.#title + " " + this.#year + " " + this.#price + " Forint";
+      }
 }
-

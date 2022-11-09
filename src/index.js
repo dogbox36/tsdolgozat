@@ -27,6 +27,9 @@ class Statue {
     kiir() {
         console.log(__classPrivateFieldGet(this, _Statue_title, "f"), __classPrivateFieldGet(this, _Statue_year, "f"), __classPrivateFieldGet(this, _Statue_price, "f"), __classPrivateFieldGet(this, _Statue_height, "f"));
     }
+    toString() {
+        return __classPrivateFieldGet(this, _Statue_title, "f") + " " + __classPrivateFieldGet(this, _Statue_year, "f") + " " + __classPrivateFieldGet(this, _Statue_price, "f") + " Forint";
+    }
 }
 exports.Statue = Statue;
 _Statue_title = new WeakMap(), _Statue_year = new WeakMap(), _Statue_price = new WeakMap(), _Statue_height = new WeakMap();

@@ -1,6 +1,5 @@
-import { Statue } from "./index";
 
-interface Artwork{
+export interface  Artwork{
     title: string;
     year: Date;
     price:  number;
