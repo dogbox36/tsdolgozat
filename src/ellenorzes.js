@@ -32,6 +32,22 @@ let nevPattern = /[a-zA-Z, ]{1,}$/;
         pricenull = false;
         document.getElementById('error').textContent = "minimum 1 Ft legyen!";
     }
+    let yearnull = false;
+    let year = document.getElementById('year');
+    if (parseInt(year.value) < 2023) {
+        notnull(year);
+        yearnull = true;
+        document.getElementById('error').textContent = "";
+    }
+    else {
+        nulll(year);
+        yearnull = false;
+        if (year.value = "") {
+            document.getElementById('error').textContent = "Nem lehet üres a mező";
+        }
+        else
+            document.getElementById('error').textContent = "Az idei évet lehet kiírni";
+    }
     function nulll(adat) {
         adat.style.border = "1px solid red";
     }

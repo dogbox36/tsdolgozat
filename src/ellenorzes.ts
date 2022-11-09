@@ -37,6 +37,22 @@ document.getElementById('gomb')?.addEventListener('click', () =>{
         }
 
 
+        let yearnull = false;
+        let year : HTMLInputElement = document.getElementById('year')as HTMLInputElement;
+        if(parseInt(year.value) < 2023){
+            notnull(year)
+            yearnull = true;
+            (document.getElementById('error') as HTMLElement).textContent = "";
+        }else{
+            nulll(year);
+            yearnull = false;
+            if(year.value = ""){
+                (document.getElementById('error') as HTMLElement).textContent = "Nem lehet üres a mező";
+            }else (document.getElementById('error') as HTMLElement).textContent = "Az idei évet lehet kiírni";
+        }
+
+  
+
         function nulll (adat : HTMLInputElement){
             adat.style.border = "1px solid red";
         }
