@@ -24,6 +24,18 @@ document.getElementById('gomb')?.addEventListener('click', () =>{
         
     }
 
+    let pricenull = false;
+        let price : HTMLInputElement = document.getElementById('price')as HTMLInputElement;
+        if(parseInt(price.value) > 0){
+            notnull(price)
+            pricenull = true;
+            (document.getElementById('error') as HTMLElement).textContent = "";
+        }else{
+            nulll(price);
+            pricenull = false;
+            (document.getElementById('error') as HTMLElement).textContent = "minimum 1 Ft legyen!";
+        }
+
 
         function nulll (adat : HTMLInputElement){
             adat.style.border = "1px solid red";

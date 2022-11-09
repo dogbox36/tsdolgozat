@@ -20,6 +20,18 @@ let nevPattern = /[a-zA-Z, ]{1,}$/;
             document.getElementById('error').textContent = "Nem tartalmazhat speciális karaktereket!";
         }
     }
+    let pricenull = false;
+    let price = document.getElementById('price');
+    if (parseInt(price.value) > 0) {
+        notnull(price);
+        pricenull = true;
+        document.getElementById('error').textContent = "";
+    }
+    else {
+        nulll(price);
+        pricenull = false;
+        document.getElementById('error').textContent = "minimum 1 Ft legyen!";
+    }
     function nulll(adat) {
         adat.style.border = "1px solid red";
     }
