@@ -51,7 +51,17 @@ document.getElementById('gomb')?.addEventListener('click', () =>{
             }else (document.getElementById('error') as HTMLElement).textContent = "Az idei évet lehet kiírni";
         }
 
-  
+        let heightnull = false;
+        let height : HTMLInputElement = document.getElementById('height')as HTMLInputElement;
+        if(parseInt(height.value) > 9){
+            notnull(height)
+            heightnull = true;
+            (document.getElementById('error') as HTMLElement).textContent = "";
+        }else{
+            nulll(height);
+            heightnull = false;
+            (document.getElementById('error') as HTMLElement).textContent = "minimum 10 cm legyen a magasság!";
+        }
 
         function nulll (adat : HTMLInputElement){
             adat.style.border = "1px solid red";

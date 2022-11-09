@@ -48,6 +48,18 @@ let nevPattern = /[a-zA-Z, ]{1,}$/;
         else
             document.getElementById('error').textContent = "Az idei évet lehet kiírni";
     }
+    let heightnull = false;
+    let height = document.getElementById('height');
+    if (parseInt(height.value) > 9) {
+        notnull(height);
+        heightnull = true;
+        document.getElementById('error').textContent = "";
+    }
+    else {
+        nulll(height);
+        heightnull = false;
+        document.getElementById('error').textContent = "minimum 10 cm legyen a magasság!";
+    }
     function nulll(adat) {
         adat.style.border = "1px solid red";
     }
